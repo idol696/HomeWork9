@@ -3,9 +3,11 @@ public class Main {
 
         System.out.println("Задача 1");
         int[] spending = {150, 3000, 800, 50, 50};
+        int spendingTotal = 0;
         for (int spendingCurrent : spending) {
-            System.out.printf("Сумма трат за месяц составила %s рублей%n", spendingCurrent);
+            spendingTotal+= spendingCurrent;
         }
+        System.out.printf("Сумма трат за месяц составила %s рублей%n", spendingTotal);
 
         System.out.println("Задача 2");
         int spendingMin = 0;
@@ -22,7 +24,7 @@ public class Main {
         System.out.println("Максимальная сумма трат за неделю составила " + spendingMax);
 
         System.out.println("Задача 3");
-        int spendingTotal = 0;
+        spendingTotal = 0;
         for (int spendingCurrent : spending) {
             spendingTotal += spendingCurrent;
         }
